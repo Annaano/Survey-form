@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+  box-sizing:border-box;
+  margin:0;
+}
+.main::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index:-1;
+  background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main{
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.4;
+  color:white;
+  font-size:20px;
+}
+#header{
+  text-align:center;
+  margin-top:50px;
+  margin-bottom:30px;
+  line-height:1;
+  display:block;
+}
+h1{
+  font-size:32px;
+}
+p{
+  letter-spacing:0.5px;
+  font-size:18px; 
+  margin-bottom:5px;
+}
+header p{
+  margin-top:25px;
+}
+main{
+  background-color:#1b1b32cc;
+  border-radius:5px;
+  box-sizing:border-box;
+  width:700px;
+  height:100%;
+  padding:40px;
+  line-height:2;
+  margin:auto;
+}
+#name, #email, #number, #dropdown, #comment {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding:7px 10px;
+    color: #495057;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;  
+ 
+}
+input[type=radio],
+input[type=checkbox]{
+  min-width:20px;
+  min-height:20px;
+  margin-right:10px;
+  display: inline-block;
+  margin-bottom:3px;
+}
+
+#comment{
+  max-width:100%;
+  min-height:100px;
+}
+#dropdown{
+  height:40px;
+}
+span{
+  margin-left:4px;
+}
+label[for=name], 
+label[for=email],
+label[for=number],
+label[for=dropdown],
+label[for=comment],
+label[for=option],
+label[for=fav-feature]{
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#checkbox label,
+.radio label{
+  display:flex;
+  align-items:center;
+  margin-bottom:8px;
+}
+
+#submit{
+  display: block;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0;
+    color: white;
+    background-color: #37af65;
+  border:none;
+   border-radius:5px;
+    font-size: 20px;
+    margin-top: 30px;
+cursor:pointer;
+}
+@media(max-width:770px){
+  main{
+    width:550px;
+  }
+}
+
+@media(max-width:580px) {
+  main{
+    width:100%; 
+    margin:0;
+  } 
+}
+
+
+
